@@ -1,6 +1,8 @@
+/* purgecss start ignore */
 .wordpress-meetup {
   background: rebeccapurple;
 }
+/* purgecss end ignore */
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
