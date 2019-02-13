@@ -1,15 +1,15 @@
 {
   "name": "tailwind-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo of how Tailwind works used for my talk at the Port Macquarie Wordpress Meetup",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwind build styles.css -o main.css",
+    "build": "npx tailwind build tailwind.css -o styles.css",
     "init": "rm -rf tailwind.js && npx tailwind init"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "tailwindcss": "^0.7.4"
   }
