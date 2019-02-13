@@ -4,9 +4,10 @@
   "description": "Demo of how Tailwind works used for my talk at the Port Macquarie Wordpress Meetup",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwind build tailwind.css -c tailwind.js -o styles.css",
     "init": "rm -rf tailwind.js && npx tailwind init",
-    "purgecss": "postcss styles.css -o styles.css"
+    "build": "npx tailwind build tailwind.css -c tailwind.js -o styles.css",
+    "purgecss": "postcss styles.css -o styles.css",
+    "start": "npm run init && npm run build && npm run purgecss"
   },
   "keywords": [],
   "author": "",
