@@ -7,7 +7,8 @@
     "init": "rm -rf tailwind.js && npx tailwind init",
     "build": "npx tailwind build tailwind.css -c tailwind.js -o styles.css",
     "purgecss": "postcss styles.css -o styles.css",
-    "start": "npm run init && npm run build && npm run purgecss"
+    "start": "npm run init && npm run build && npm run purgecss",
+    "win-start": "npx tailwind init && npm run build && npm run purgecss"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,7 @@
     "postcss": "^7.0.14",
     "postcss-cli": "^6.1.1",
     "postcss-import": "^12.0.1",
-    "purgecss": "^1.1.0",
+    "@fullhuman/postcss-purgecss": "^1.1.0",
     "tailwindcss": "^0.7.4"
   }
 }
