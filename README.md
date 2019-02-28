@@ -17,3 +17,5 @@ To generate a Tailwind config file run: `npm run init`
 To generate a CSS file based on the Tailwind config file, as well as any custom CSS you make have written in the CSS file run: `npm run build`
 
 To run PurgeCSS to strip out all the classes not used in the index.html file, run: `npm run purgecss`
+
+**Some of the scripts require a POSIX shell** if you are on Windows, you might need to have WSL on your machine.
