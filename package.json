@@ -4,11 +4,10 @@
   "description": "Demo of how Tailwind works used for my talk at the Port Macquarie Wordpress Meetup",
   "main": "index.js",
   "scripts": {
-    "init": "rm -rf tailwind.config.js && npx tailwind init",
-    "build": "npx tailwind build tailwind.css -c tailwind.config.js -o styles.css",
+    "init": "rm -rf tailwind.config.js && npx tailwind init --full",
+    "build": "npx tailwind build tailwind.css -o styles.css",
     "purgecss": "postcss styles.css -o styles.css",
-    "start": "npm run init && npm run build && npm run purgecss",
-    "win-start": "npx tailwind init && npm run build && npm run purgecss"
+    "start": "npm run init && npm run build && npm run purgecss"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +18,6 @@
     "postcss": "^7.0.14",
     "postcss-cli": "^6.1.2",
     "postcss-import": "^12.0.1",
-    "tailwindcss": "^1.0.0-beta.1"
+    "tailwindcss": "^1.0.0-beta.3"
   }
 }

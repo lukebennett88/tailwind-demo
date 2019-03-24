@@ -8,7 +8,9 @@
     <title>Tailwind Demo</title>
   </head>
   <body class="flex flex-col min-h-screen text-gray-800">
-    <header class="bg-indigo-100 flex items-baseline justify-between p-4">
+    <header
+      class="bg-indigo-100 flex items-baseline justify-between p-4 shadow hover:shadow-lg"
+    >
       <a class="font-bold text-lg" href="#">Page Title</a>
       <nav>
         <a href="#">About</a>
@@ -17,9 +19,31 @@
       </nav>
     </header>
     <div class="flex flex-1 flex-wrap">
-      <main class="flex-1 p-4">
-        <div class="max-w-md mx-auto">
-          <h1 class="font-bold leading-none mb-4 text-3xl">
+      <aside class="p-4 w-full md:w-1/5">
+        <ul class="flex flex-col font-medium">
+          <li class="p-2">
+            <a class="text-gray-600 hover:text-gray-600" href="#">About</a>
+          </li>
+          <li class="p-2">
+            <a class="text-gray-600 hover:text-gray-600" href="#">Contact</a>
+          </li>
+          <li class="p-2">
+            <a class="text-gray-600 hover:text-gray-600" href="#">Blog</a>
+          </li>
+          <li class="p-2">
+            <a class="text-gray-600 hover:text-gray-600" href="#">Facebook</a>
+          </li>
+          <li class="p-2">
+            <a class="text-gray-600 hover:text-gray-600" href="#">Instagram</a>
+          </li>
+          <li class="p-2">
+            <a class="text-gray-600 hover:text-gray-600" href="#">Twitter</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="flex-1 p-4 text-gray-700">
+        <div class="max-w-md">
+          <h1 class="font-light leading-none mb-4 text-3xl text-gray-800">
             Attention grabbing heading
           </h1>
           <p>
@@ -28,12 +52,12 @@
             quisquam quia, optio quo nesciunt quam mollitia! Doloremque repellat
             laudantium explicabo cupiditate aperiam.
           </p>
-          <blockquote class="font-serif">
+          <p class="font-serif">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             illo fugiat eligendi temporibus saepe eum modi qui natus voluptate,
             repellat ut dolore laboriosam dolores ab hic iusto? Officia, eaque
             facilis!
-          </blockquote>
+          </p>
           <p>
             <code>
               <em>Lorem</em> ipsum dolor sit amet consectetur adipisicing elit.
@@ -44,28 +68,6 @@
           </p>
         </div>
       </main>
-      <aside class="bg-indigo-200 p-4 w-1/6">
-        <ul class="font-semibold">
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Facebook</a>
-          </li>
-          <li>
-            <a href="#">Instagram</a>
-          </li>
-          <li>
-            <a href="#">Twitter</a>
-          </li>
-        </ul>
-      </aside>
     </div>
     <footer
       class="bg-indigo-900 flex items-baseline justify-center font-bold p-4 text-white"
