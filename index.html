@@ -7,76 +7,84 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Tailwind Demo</title>
   </head>
-  <body class="flex flex-col min-h-screen text-gray-800">
+  <body class="flex flex-1 flex-col font-sans min-h-screen text-gray-700">
     <header
-      class="bg-indigo-100 flex items-baseline justify-between p-4 shadow hover:shadow-lg"
+      class="border-b flex font-semibold items-center justify-between p-4 text-gray-600"
     >
-      <a class="font-bold text-lg" href="#">Page Title</a>
-      <nav>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Blog</a>
+      <a class="px-2 hover:text-gray-700" href="#">Site Title</a>
+      <nav class="px-2 text-sm tracking-wider uppercase">
+        <a class="hover:text-gray-700" href="#">Home</a>
+        <a class="hover:text-gray-700" href="#">About</a>
+        <a class="hover:text-gray-700" href="#">Blog</a>
       </nav>
     </header>
-    <div class="flex flex-1 flex-wrap">
-      <aside class="p-4 w-full md:w-1/5">
-        <ul class="flex flex-col font-medium">
-          <li class="p-2">
-            <a class="text-gray-600 hover:text-gray-600" href="#">About</a>
-          </li>
-          <li class="p-2">
-            <a class="text-gray-600 hover:text-gray-600" href="#">Contact</a>
-          </li>
-          <li class="p-2">
-            <a class="text-gray-600 hover:text-gray-600" href="#">Blog</a>
-          </li>
-          <li class="p-2">
-            <a class="text-gray-600 hover:text-gray-600" href="#">Facebook</a>
-          </li>
-          <li class="p-2">
-            <a class="text-gray-600 hover:text-gray-600" href="#">Instagram</a>
-          </li>
-          <li class="p-2">
-            <a class="text-gray-600 hover:text-gray-600" href="#">Twitter</a>
-          </li>
-        </ul>
+    <div class="flex flex-1">
+      <aside class="border-r flex max-w-xs p-6 w-full">
+        <nav class="flex flex-col font-semibold text-gray-600 w-full">
+          <h2
+            class="font-bold mb-2 px-2 text-gray-500 text-sm tracking-wide uppercase"
+          >
+            Navigation
+          </h2>
+          <a
+            class="hover:bg-teal-100 py-1 px-2 rounded hover:text-teal-600"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="hover:bg-teal-100 py-1 px-2 rounded hover:text-teal-600"
+            href="#"
+            >About</a
+          >
+          <a
+            class="hover:bg-teal-100 py-1 px-2 rounded hover:text-teal-600"
+            href="#"
+            >Blog</a
+          >
+        </nav>
       </aside>
-      <main class="flex-1 p-4 text-gray-700">
-        <div class="max-w-md">
-          <h1 class="font-light leading-none mb-4 text-3xl text-gray-800">
-            Attention grabbing heading
-          </h1>
+      <main class="flex-1">
+        <div class="max-w-lg px-8 py-4">
+          <h1 class="font-light mb-2 text-3xl">Attention grabbing headline</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-            accusantium recusandae. Qui at beatae commodi numquam maxime
-            quisquam quia, optio quo nesciunt quam mollitia! Doloremque repellat
-            laudantium explicabo cupiditate aperiam.
-          </p>
-          <p class="font-serif">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            illo fugiat eligendi temporibus saepe eum modi qui natus voluptate,
-            repellat ut dolore laboriosam dolores ab hic iusto? Officia, eaque
-            facilis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            officia nam, omnis in vero exercitationem animi non neque doloremque
+            eaque architecto voluptates, est natus quis! Perferendis provident
+            distinctio et hic!
           </p>
           <p>
-            <code>
-              <em>Lorem</em> ipsum dolor sit amet consectetur adipisicing elit.
-              Cum suscipit a dignissimos voluptas dicta, praesentium blanditiis
-              quae et eum tempore dolorum! Voluptatem maxime soluta officia
-              nobis quaerat temporibus, magni nihil.
-            </code>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod,
+            exercitationem, voluptate sint distinctio assumenda repudiandae
+            obcaecati tempora hic consequuntur voluptates at. Totam blanditiis
+            pariatur accusamus atque debitis quidem exercitationem?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+            odit ducimus animi et eos eaque, natus id accusantium cupiditate
+            doloribus repudiandae consequatur culpa sed quisquam tempore modi
+            dicta officia! Dolore.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            nemo at aliquam libero odio aspernatur eius velit, voluptate
+            necessitatibus deserunt! Illo natus et nihil aliquam omnis, dolor
+            veritatis autem nesciunt.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            quas, natus, quia explicabo iure, omnis consequuntur facere dicta
+            asperiores voluptatibus ad? Alias nobis aperiam illum vero porro
+            nulla quos eligendi.
           </p>
         </div>
       </main>
     </div>
-    <footer
-      class="bg-indigo-900 flex items-baseline justify-center font-bold p-4 text-white"
-    >
-      <nav>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
+    <footer class="flex p-4">
+      <div class="ml-auto">
         <a href="#">Twitter</a>
-      </nav>
+        <a href="#">Instagram</a>
+        <a href="#">MySpace</a>
+      </div>
     </footer>
   </body>
 </html>
